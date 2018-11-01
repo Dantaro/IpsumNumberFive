@@ -60,11 +60,11 @@ function* paragraphGenerator(singleParagraph = false, linesPer) {
     }
 }
 
-const defaults = {
+const defaults = Object.freeze({
     paragraphSeparator : "\r\n\r\n",
     phraseSeparator : " ",
     linesPer : 6
-}
+})
 
 export function ipsum(paragraphs, options = defaults) {
     const opts = Object.assign({}, defaults, options);
