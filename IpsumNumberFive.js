@@ -70,7 +70,6 @@ export function ipsum(paragraphs, options = defaults) {
     const opts = Object.assign({}, defaults, options);
     let gen = paragraphGenerator(paragraphs === 1, opts.linesPer);
     return Array
-        .apply(null, {length: paragraphs})
-        .map(_ => gen.next().value.join(opts.phraseSeparator))
+        .from({ length: paragraphs }, () => gen.next().value.join(opts.phraseSeparator))
         .join(opts.paragraphSeparator);
 }
