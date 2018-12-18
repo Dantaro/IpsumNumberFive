@@ -1,0 +1,19 @@
+{
+  "name": "ipsumnumberfive",
+  "version": "1.0.0",
+  "description": "A Lorem Ipsum generator based on Lou Bega's smash hit \"Mambo Number 5!\"",
+  "main": "IpsumNumberFive.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dantaro/IpsumNumberFive.git"
+  },
+  "author": "Devin McIntyre",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dantaro/IpsumNumberFive/issues"
+  },
+  "homepage": "https://github.com/Dantaro/IpsumNumberFive#readme"
+}
